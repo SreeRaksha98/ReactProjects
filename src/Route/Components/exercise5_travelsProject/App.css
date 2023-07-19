@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .hamberburger {
+    display:none;
+  }
+  .top-container {
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+  }
+  .p-4 {
+    padding: 1rem;
+  }
+.backgroundImage{
+  width: 100%;
+}
+
+  /* Sidebar */
+  .sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .sidebar-header {
+    text-align: center;
+  }
+  
+  .sidebar .categories li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar .categories i {
+    margin-right: 10px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+  
+  .navbar div {
+    /* Add styles for logo */
+  }
+  
+  /* Welcome Section */
+  .welcome {
+    margin-top: 20px;
+  }
+  
+  .welcome .content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .welcome h1 {
+    font-size: 1.5rem;
+  }
+  
+  .welcome p {
+    margin-bottom: 0;
+  }
+  
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  /* Statistics Section */
+  .statistics {
+    margin-top: 20px;
+  }
+  
+  .statistics .box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .statistics .box i {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+  
+  .statistics .box h3 {
+    margin-bottom: 0;
+  }
+  
+  .statistics .box p {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .hamberburger {
+      display: block;
+      background: #58b5ff;
+      border-radius: 5px;
+      border: 0;
+      padding: 0.21rem;
+  }
+    .hamberburger:hover {
+       background: #91ceff;
+      box-shadow: 0 0 2px 0px black;
+      cursor: pointer;
+    }
+    .navbar .logo {
+      display:flex;
+    } 
+    .logo span {
+      margin: auto 1rem;
+    }
+    .main-container {
+      display: flex;
+      width: 100%;
+    }
+    .sidebar {
+      display: none;
+    }
+  
+    #wrapper {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+  /* font-family: 'Karla', sans-serif; */
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+  }
+  
+  
+  /* Grid Container CSS Code  */
+  footer {
+      display: grid;
+      margin: 0;
+      margin-top:auto;
+    padding:0;
+  }
+  
+  
+  /* Inner Grid Item-Box CSS Code  */
+  .item{
+      padding: 35px;
+  }
+  
+  
+  /* Inner Grid Card Class Item CSS Code  */
+  #card-1{
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background: white;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+  }
+  
+  #card-2{
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      background: hsl(179, 62%, 43%);
+      border-bottom-left-radius: 8px;
+  }
+  
+  #card-3{
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      background: hsl(179, 62%, 43%);
+      opacity: 0.8;
+      border-bottom-right-radius: 8px;
+  }
+  
+  
+  /* Item-1 CSS Code */
+  .item-1 .main-heading{
+      font-size: 1.5rem;
+      color: hsl(179, 62%, 43%);
+  }
+  
+  .item-1 .sub-heading{
+      font-size: 1.2rem;
+      color: hsl(71, 73%, 54%);
+  }
+  
+  .item-1 p{  
+      color: hsl(218, 22%, 67%);
+      line-height: 1.5;
+      position: relative;
+      font-weight: 600;
+      top: -5px;
+  }
+  
+  /* Item-2 CSS Code */
+  .item-2 h3{
+      font-size: 1.1rem;
+      color: white;
+  }
+  
+  .item-2 .price{
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+  }
+  
+  .item-2 .price span{
+      font-size: 1rem;
+      font-weight: normal;
+      color: white;
+      opacity: 0.7;
+      top: -5px;
+      left: -5px;
+      position: relative;
+  }
+  
+  .item-2 .para{
+      color: white;
+      opacity: 0.9; 
+      position: relative;
+      top: -10px;
+  }
+  
+  
+  /* Item-2 Button CSS Code */
+  .item-2 button{
+      padding: 15px;
+      width: 100%;
+      max-width: 210px;
+      background: hsl(71, 73%, 54%);
+      color: white;
+      border-radius: 6px;
+      border: transparent;
+      outline: none;
+      font-weight: 400;
+      font-size: 0.9rem;
+      cursor: pointer;
+  }
+  
+  .item-2 button:hover{
+      transition: 0.4s ease;
+      color: whitesmoke;
+      background: tomato;
+      box-shadow: 1px 1px 2px 2px black;
+      outline: none;
+  }
+  
+  /* Item-3 CSS Code */
+  .item-3 h3{
+      font-size: 1.1rem;
+      color: white;
+  }
+  
+  .item-3 p{
+      font-size: 0.85rem;
+      color: white;
+      opacity: 0.8;
+      line-height: 1.5;
+  }
+  
+  
+  /* Footer Design CSS COde */
+  footer{
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+      text-align: center;
+  }
+  
+  footer a{
+      text-decoration: underline;
+      cursor: pointer;
+  }
+  
+  
+  /* Responsive CSS Code */
+  @media  all and (max-width: 1500px) {
+      body{
+          width: auto;
+          max-width: none;
+          transition: 0.3s ease;
+      }
+      
+  }
+  @media all  and (max-width: 658px) {
+      body{
+          padding: 20px;
+          transition: 0.4s;
+          margin: auto;
+      }
+      #card-2{
+          border-bottom-left-radius: 0px;
+          grid-column-end: 3;
+      }
+      #card-3{
+          grid-row-start: 3;
+          grid-row-end: 3;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          border-bottom-left-radius: 8px;
+          transition: 0.3s;
+      }
+  }
+  
+  @media all and (max-width: 400px) {
+      .item-1 .main-heading{
+          font-size: 1.3rem;
+      }
+      
+      .item-1 .sub-heading{
+          font-size: 1rem;
+      }
+      
+      .item-1 p{  
+          font-size: 14px;
+          line-height: 2;
+          transition: 0.3s;
+      }
+  }

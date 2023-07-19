@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --backgroundColor: #fff;
+    --textColor: #000;
+}
+.dark-mode {
+    --backgroundColor: #000;
+    --textColor: #fff;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background: var(--backgroundColor);
+    color: var(--textColor);
+}
+
+.sub-container-1 {
+    width: 100%;
+    height: 40vh;
+}
