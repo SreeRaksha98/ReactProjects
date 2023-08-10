@@ -10,6 +10,7 @@ import CollapsableComponent from "./Components/exercise3_collapsableComponent/Ap
 import DarkMode from "./Components/exercise6_darkMode/App.js"
 import JobAppComponent from "./Components/exercise7_registrationFrom/App"
 import ContactManagerComponent from "./Components/exercise8_contactManager/App.js"
+import NameManagerComponent from "./Components/Exercise9_FriendList/App"
 
 const App = () => {
     return (
@@ -31,7 +32,8 @@ const App = () => {
                         <Link className="item" to="/JobAppComponent">JobAppComponent</Link>
                     
                         <Link className="item" to="/ContactManagerComponent">ContactManagerComponent</Link>
-                    
+                        <Link className="item" to="/name-manager">Name Manager</Link>
+
                 </div>
                 <hr />
                 <Routes>
@@ -44,6 +46,8 @@ const App = () => {
                     <Route path="/DarkMode" element={<DarkMode />} />
                     <Route path="/JobAppComponent" element={<JobAppComponent />} />
                     <Route path="/ContactManagerComponent" element={< ContactManagerComponent />} />
+                    <Route path="/name-manager" element={<NameManagerComponent />} />
+
                 </Routes>
             </div>
         </Router>
