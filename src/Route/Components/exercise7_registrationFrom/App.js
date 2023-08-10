@@ -54,11 +54,11 @@ class JobAppComponent extends Component {
                     <div className="detailsContainer">
                         {/* ---------------------------------------------------------intro */}
                         <div className={this.state.step === 0 ? 'activediv' : 'inactive'}>
-                            <div className="item1 item">
+                            <div className="item1 item-search">
                                 {/* <label className="lable">Username </label> */}
                                 <input autoComplete="off" name="text" className="inputEntry" type="text" placeholder="Username"/>
                             </div>
-                            <div className="item2 item">
+                            <div className="item2 item-search">
                                 {/* <label className="lable">Position</label> */}
                                 <input autoComplete="off" name="text" className="inputEntry" type="text" placeholder="Position"/>
                             </div>
@@ -67,11 +67,11 @@ class JobAppComponent extends Component {
                         {/* ---------------------------------------------------------contact */}
                         <div className={this.state.step === 1 ? 'activediv' : 'inactive'}>
 
-                            <div className="item1 item">
+                            <div className="item1 item-search">
                                 {/* <label className="lable">Phone </label> */}
                                 <input autoComplete="off" name="text" className="inputEntry" type="text" placeholder="Phone" />
                             </div>
-                            <div className="item2 item">
+                            <div className="item2 item-search">
                                 {/* <label className="lable">Email</label> */}
                                 <input autoComplete="off" name="text" className="inputEntry" type="text" placeholder="Email"/>
                             </div>
@@ -79,11 +79,11 @@ class JobAppComponent extends Component {
 
                         {/* ---------------------------------------------------------ID */}
                         <div className={this.state.step === 2 ? 'activediv' : 'inactive'}>
-                            <div className="item1 item">
+                            <div className="item1 item-search">
                                 {/* <label className="lable">Date of Birth </label> */}
                                 <input autoComplete="off" name="text" className="inputEntry" type="date" placeholder="Date of Birth"/>
                             </div>
-                            <div className="item2 item">
+                            <div className="item2 item-search">
                                 {/* <label className="lable">Year of Experience</label> */}
                                 <input autoComplete="off" name="text" className="inputEntry" type="text" placeholder="Year of Experience"/>
                             </div>
@@ -91,11 +91,11 @@ class JobAppComponent extends Component {
 
                         {/* ---------------------------------------------------------password */}
                         <div className={this.state.step === 3 ? 'activediv' : 'inactive'}>
-                            <div className="item1 item">
+                            <div className="item1 item-search">
                                 {/* <label className="lable">Password</label> */}
                                 <input autoComplete="off" name="text" className="inputEntry" type="text" placeholder="Password"/>
                             </div>
-                            <div className="item2 item">
+                            <div className="item2 item-search">
                                 {/* <label className="lable">Confirm Password</label> */}
                                 <input autoComplete="off" name="text" className="inputEntry" type="text" placeholder="Confirm Password"/>
                             </div>
