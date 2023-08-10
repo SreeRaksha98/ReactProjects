@@ -104,8 +104,8 @@ class JobAppComponent extends Component {
                         {/* ---------------------------------------------------------buttons */}
                         <div className="buttons">
                             {this.state.step < 1 ?
-                                (<button className="prevButton" disabled>Prev</button>) :
-                                (<button className="prevButton" onClick={this.handleClickPrevButton}>Prev</button>)}
+                                (<button className="prevButton register" disabled>Prev</button>) :
+                                (<button className="prevButton register" onClick={this.handleClickPrevButton}>Prev</button>)}
 
                             {this.state.step > 2 ?
                                 (<button className="nextButton" onClick={this.handleSubmitButton}>Submit</button>) :

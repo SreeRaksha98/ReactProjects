@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/**
+ * Style for Menu
+ **/
+.ui.secondary.menu {
+  margin-top: 0.75rem;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.ui.secondary.menu a.item {
+  padding: 1rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+/**
+ * Tablet Design
+ **/
+ @media all and (max-width: 800px) {
+  .ui.secondary.menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/**
+ * Mobile Design
+ **/
+@media all and (max-width: 500px) {
+  .ui.secondary.menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
