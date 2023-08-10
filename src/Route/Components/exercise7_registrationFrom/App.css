@@ -167,13 +167,13 @@ button {
     align-items: flex-end;
   }
 
-  button:hover {
+  button.register:hover {
     background-color: dodgerblue;
     box-shadow: dodgerblue;
     color: #fff;
     transform: translateY(-7px);
   }
   
-  button:active {
+  button.register:active {
     transform: translateY(-1px);
   }
