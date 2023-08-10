@@ -21,7 +21,7 @@ const ViewFriends = props => {
             ? names.map(name => {
                 return <div>{name}</div>
                 })
-            : 'Sorry you have 0 friends as of now, make fiends soon 😊😊!'}
+            : 'Sorry you have 0 friends as of now, make friends soon 😊😊!'}
         </div>
         </div>
     )
