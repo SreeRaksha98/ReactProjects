@@ -6,11 +6,12 @@ import { BrowserRouter as Router, Routes, Link, Route } from 'react-router-dom';
 import PhoneNumberComponent from './Components/exercise1_phoneNumber_verification/App.js';
 import StateChangeComponent from "./Components/exercise2_changeStates/App";
 import CollapsableComponent from "./Components/exercise3_collapsableComponent/App.js"
-// import TravelsProject from "./Components/exercise5_travelsProject/App.js"
 import DarkMode from "./Components/exercise6_darkMode/App.js"
 import JobAppComponent from "./Components/exercise7_registrationFrom/App"
 import ContactManagerComponent from "./Components/exercise8_contactManager/App.js"
 import NameManagerComponent from "./Components/Exercise9_FriendList/App"
+import IplMatchList from "./Components/exercise10_IPLMatchList/App.js"
+import HooksComponent from "./Components/exercise11_HooksComponent/App.js"
 
 const App = () => {
     return (
@@ -33,7 +34,8 @@ const App = () => {
                     
                         <Link className="item" to="/ContactManagerComponent">ContactManagerComponent</Link>
                         <Link className="item" to="/name-manager">Name Manager</Link>
-
+                        <Link className="item" to="/IplMatchList">IPL Teams</Link>
+                        <Link className="item" to="/HooksComponent">Hooks Concept task </Link>
                 </div>
                 <hr />
                 <Routes>
@@ -42,12 +44,12 @@ const App = () => {
                     <Route path="/PhoneNumberComponent" element={<PhoneNumberComponent />} />
                     <Route path="/StateChangeComponent" element={<StateChangeComponent />} />
                     <Route path="/CollapsableComponent" element={<CollapsableComponent />} />
-                    {/* <Route path="/TravelsProject" element={<TravelsProject />}/> */}
                     <Route path="/DarkMode" element={<DarkMode />} />
                     <Route path="/JobAppComponent" element={<JobAppComponent />} />
                     <Route path="/ContactManagerComponent" element={< ContactManagerComponent />} />
                     <Route path="/name-manager" element={<NameManagerComponent />} />
-
+                    <Route path="/IplMatchList" element={<IplMatchList />} />
+                    <Route path="/HooksComponent" element={<HooksComponent />} />
                 </Routes>
             </div>
         </Router>
