@@ -13,17 +13,16 @@ const InputTagComponent = () => {
         // console.log(e)
         let regExp = /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/;
 
-        if (name.length) {
+        if (name.length && regExp.test(num)) {
             setNames([...names, { id: names.length, name }])
             setName('')
-        }
 
-        if (regExp.test(num)) {
             setNums([...nums, { id: nums.length, num }])
             setNum('')
         }
+
         else(
-            console.log('enter correct num')
+            console.log('enter correct value')
         )
     }
 
