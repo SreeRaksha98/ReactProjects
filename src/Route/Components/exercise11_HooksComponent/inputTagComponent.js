@@ -1,31 +1,44 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const InputTagComponent = () => {
 
     const [name, setName] = useState('')
-    const [names, setNames] = useState([])
+    const [userContact, setUserContact] = useState([])
     const [num, setNum] = useState()
-    const [nums, setNums] = useState([])
 
     const handleSubmit = (e) => {
 
         e.preventDefault()
-        // console.log(e)
-        let regExp = /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/;
+        let regExp = /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/
+        let updatedUserContact = []
 
         if (name.length && regExp.test(num)) {
-            setNames([...names, { id: names.length, name }])
+            updatedUserContact = [...userContact, { id: userContact.length, name, num }]
+            setUserContact(updatedUserContact)
+            localStorage.setItem('name', JSON.stringify(updatedUserContact))
             setName('')
-
-            setNums([...nums, { id: nums.length, num }])
             setNum('')
         }
 
-        else(
+        else (
             console.log('enter correct value')
         )
     }
 
+    useEffect(() => {
+        /**
+          * @var dataInLocalStorage: NULL | string
+          * fetching prev data from LS  
+          **/
+        let updatedUserContact = []
+        const dataInLocalStorage = localStorage.getItem('name')
+        //appending new data to LS
+        if (dataInLocalStorage) {
+            const covertedData = JSON.parse(dataInLocalStorage)
+            updatedUserContact = [...covertedData]
+        }
+        setUserContact(updatedUserContact)
+    }, [])
 
     return (
         <div>
@@ -49,9 +62,9 @@ const InputTagComponent = () => {
                 </button>
 
                 <div>
-                    {names.map((item) => <li key={item.id}> {item.name}</li>)}
+                    {userContact.map((item) => <li key={item.id}> {item.name} - {item.num} </li>)}
                     <br />
-                    {nums.map((item) => <li key={item.id}> {item.num} </li>)}
+                    {/* {nums.map((item) => <li key={item.id}> {item.num} </li>)} */}
                 </div>
             </form>
         </div>
