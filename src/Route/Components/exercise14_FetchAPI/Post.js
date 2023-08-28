@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Post = props => {
-    // objectPosts = [{id:'1', name:'post1'}, {id:'2', name:'post1'},{id:'3', name:'post1'}]
-    //                objectPosts[0].id
-    //                                        objectPosts[1].id
-    //                                                                objectPosts[2].name
-    // data = props.posts.map(post:{id, name}=> <div>{post.id} - {post.name}</div>) // [<div>'1'</div>, <div>'2'</div>, <div>'3'</div>]
+    const [body, setBody] = useState({})
 
+    const idFromURL = new URLSearchParams(window.location.search).get("id")
 
-    return <div></div>;
+    const getBodyFromURL = () => {
+        const getBodyURL = fetch('https://jsonplaceholder.typicode.com/posts/' + idFromURL).then(res => res.json()).then((jsonResponseData) => {
+            console.log(jsonResponseData.body)
+            setBody(jsonResponseData)
+        })
+    }
+    
+    useEffect(() => {
+        getBodyFromURL()
+    }, [])
+
+    return (
+        <div>
+            <h2>Hello world....Post id = {idFromURL}</h2>
+            <div>
+                <div>Title: {body.title}</div>
+                <div>Body: {body.body}</div>
+            </div>
+        </div>
+        
+    )
 };
 
 
 export default Post;
+
+// user, comments
