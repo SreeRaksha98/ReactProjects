@@ -1,0 +1,11 @@
+.pop-up-container{
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    background: white;
+    top: 0;
+    border: solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

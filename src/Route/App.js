@@ -17,6 +17,8 @@ import TodoAPI from "./Components/exercise13_todoAPI/App.js"
 import FetchAPI from "./Components/exercise14_FetchAPI/App.js"
 import FetchTodoAPI from "./Components/exercise13_todoFetchAPI/App.js"
 import Post from "./Components/exercise14_FetchAPI/Post"
+import FuelTask from "./Components/exercise15_FuelTask/App.js"
+import RememberMe from "./Components/exercise16_RemeberMe/App.js"
 
 const App = () => {
     return (
@@ -38,6 +40,8 @@ const App = () => {
                         <Link className="item" to="/TodoAPI">ToDo</Link>
                         <Link className="item" to="/FetchAPI">FetchAPI</Link>
                         <Link className="item" to="/FetchTodoAPI">Todo FetchAPI</Link>
+                        <Link className="item" to="/FuelTask">Fuel Task</Link>
+                        <Link className="item" to="/RememberMe">Remember Me</Link>
 
                 </div>
                 <hr />
@@ -58,7 +62,8 @@ const App = () => {
                     <Route path="/FetchAPI" element={<FetchAPI/>} />
                     <Route path="/FetchTodoAPI" element={<FetchTodoAPI/>} />
                     <Route path="/FetchAPI/Post" element = {<Post />} />
-
+                    <Route path="/FuelTask" element= {<FuelTask/>} />
+                    <Route path="/RememberMe" element={<RememberMe/>} />
                 </Routes>
             </div>
         </Router>
